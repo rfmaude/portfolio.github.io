@@ -11,9 +11,9 @@ body {
 
 header {
     display: flex;
-    margin-top: 5vh;
     align-items: center;
     justify-content: center;
+    margin-bottom: 1vh;
 
 }
 

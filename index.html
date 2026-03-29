@@ -7,6 +7,7 @@
     <title>Accueil</title>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="page-icons.css">
+    <link rel="stylesheet" href="popup.css">
 </head>
 
 <body>
@@ -29,7 +30,7 @@
 
 
             </tr>
-            
+
             <tr>
 
                 <td class="github"><img class="icon" src="images/icons/icons-github.png" alt=""></td>
@@ -41,7 +42,7 @@
                 <td class="github"> <a href=""><button class="github">GitHub</button></a></td>
                 <td class="gimp"><a href=""><button>Gimp</button></a></td>
             </tr>
-            
+
         </table>
 
         <table class="language">
@@ -76,25 +77,45 @@
             </tr>
             <tr>
                 <!-- <td><img class="icon" src="images/icons/icons8-youtube-70.png" alt=""></td> -->
-                <td><a href="https://www.instagram.com/rfmaude/" target="_blank"><img class="icon"
-                            src="images/icons/icons-instagram.png" alt=""></a></td>
-                <td><a href="https://www.linkedin.com/in/maude-roy-flament/" target="_blank"><img class="icon"
-                            src="images/icons/icons-linkedin.png" alt=""></a></td>
-                <td class="google"><a href="google.html"><img class="icon" src="images/icons/icons-chrome.png"
-                            alt=""></a></td>
-                <td class="gmail"><img class="icon" src="images/icons/icons-gmail.png" alt=""></td>
+                <td>
+                    <a href="https://www.instagram.com/rfmaude/" target="_blank">
+                        <img class="icon" src="images/icons/icons-instagram.png" alt="">
+                    </a>
+                </td>
+                <td>
+                    <a href="https://www.linkedin.com/in/maude-roy-flament/" target="_blank">
+                        <img class="icon" src="images/icons/icons-linkedin.png" alt="">
+                    </a>
+                </td>
+                <td class="google">
+                    <button class="open-popup" data-src="google.html">
+                        <img class="icon" src="images/icons/icons-chrome.png" alt="">
+                    </button>
+                </td>
+                <td class="gmail">
+                    <button class="open-popup" data-src="gmail.html">
+                        <img class="icon" src="images/icons/icons-gmail.png" alt="">
+                    </button>
+                </td>
             </tr>
             <tr>
                 <!-- <td>YouTube</td> -->
-                <td>Instagram</td>
-                <td>LinkedIn</td>
-                <td class="google"> <a href="google.html"><button class="google">Google</button></a></td>
-                <td class="gmail"> <a href=""><button class="gmail">Gmail</button></a></td>
+                <td>
+                    <a href="https://www.instagram.com/rfmaude/" target="_blank">
+                        <button>Intagram</button>
+                    </a>
+                </td>
+                <td>
+                    <a href="https://www.linkedin.com/in/maude-roy-flament/" target="_blank">
+                        <button>LinkedIn</button>
+                    </a>
+                </td>
+                <td class="google"> <button class="open-popup" data-src="google.html">Google</button></td>
+                <td class="gmail"> <button class="open-popup" data-src="gmail.html">Gmail</button></td>
             </tr>
         </table>
 
         <table class="poubelle">
-
             <tr>
                 <td><img class="icon" src="images/icons/icons-bin.png" alt=""></td>
             </tr>
@@ -103,10 +124,17 @@
             </tr>
         </table>
 
+        <!-- Popup interne modal + iframe -->
+        <div id="popup-overlay" class="popup-overlay">
+            <div class="popup-window">
+                <button id="popup-close" class="popup-close">✕</button>
+                <iframe src="" class="popup-iframe" title="Popup"></iframe>
+            </div>
+        </div>
 
     </div>
     <script src="poubelle.js"></script>
-    <script src="google.js"></script>
+    <script src="popup.js"></script>
 </body>
 
 </html>
