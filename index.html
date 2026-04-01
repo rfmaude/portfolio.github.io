@@ -13,6 +13,51 @@
 <body>
     <img class="fond" src="images/fond_d_ecran.jpg" alt="">
     <div class="icons">
+        <table class="social">
+            <tr>
+                <th scope="row" colspan="4">A PROPOS DE MOI</th>
+            </tr>
+            <tr>
+                <!-- <td><img class="icon" src="images/icons/icons8-youtube-70.png" alt=""></td> -->
+                <td class="google">
+                    <button class="open-popup" data-src="google.html">
+                        <img class="icon" src="images/icons/icons-chrome.png" alt="">
+                    </button>
+                </td>
+                <td class="gmail">
+                    <button class="open-popup" data-src="gmail.html">
+                        <img class="icon" src="images/icons/icons-gmail.png" alt="">
+                    </button>
+                </td>
+                <td>
+                    <a href="https://www.instagram.com/rfmaude/" target="_blank">
+                        <img class="icon" src="images/icons/icons-instagram.png" alt="">
+                    </a>
+                </td>
+                <td>
+                    <a href="https://www.linkedin.com/in/maude-roy-flament/" target="_blank">
+                        <img class="icon" src="images/icons/icons-linkedin.png" alt="">
+                    </a>
+                </td>
+
+            </tr>
+            <tr>
+                <!-- <td>YouTube</td> -->
+                <td class="google"> <button class="open-popup" data-src="google.html">Google</button></td>
+                <td class="gmail"> <button class="open-popup" data-src="gmail.html">Gmail</button></td>
+                <td>
+                    <a href="https://www.instagram.com/rfmaude/" target="_blank">
+                        <button>Intagram</button>
+                    </a>
+                </td>
+                <td>
+                    <a href="https://www.linkedin.com/in/maude-roy-flament/" target="_blank">
+                        <button>LinkedIn</button>
+                    </a>
+                </td>
+
+            </tr>
+        </table>
         <table class="work">
             <tr>
                 <th scope="row" colspan="3">OUTILS DE TRAVAIL</th>
@@ -75,49 +120,7 @@
             </tr>
         </table>
 
-        <table class="social">
-            <tr>
-                <th scope="row" colspan="4">A PROPOS DE MOI</th>
-            </tr>
-            <tr>
-                <!-- <td><img class="icon" src="images/icons/icons8-youtube-70.png" alt=""></td> -->
-                <td>
-                    <a href="https://www.instagram.com/rfmaude/" target="_blank">
-                        <img class="icon" src="images/icons/icons-instagram.png" alt="">
-                    </a>
-                </td>
-                <td>
-                    <a href="https://www.linkedin.com/in/maude-roy-flament/" target="_blank">
-                        <img class="icon" src="images/icons/icons-linkedin.png" alt="">
-                    </a>
-                </td>
-                <td class="google">
-                    <button class="open-popup" data-src="google.html">
-                        <img class="icon" src="images/icons/icons-chrome.png" alt="">
-                    </button>
-                </td>
-                <td class="gmail">
-                    <button class="open-popup" data-src="gmail.html">
-                        <img class="icon" src="images/icons/icons-gmail.png" alt="">
-                    </button>
-                </td>
-            </tr>
-            <tr>
-                <!-- <td>YouTube</td> -->
-                <td>
-                    <a href="https://www.instagram.com/rfmaude/" target="_blank">
-                        <button>Intagram</button>
-                    </a>
-                </td>
-                <td>
-                    <a href="https://www.linkedin.com/in/maude-roy-flament/" target="_blank">
-                        <button>LinkedIn</button>
-                    </a>
-                </td>
-                <td class="google"> <button class="open-popup" data-src="google.html">Google</button></td>
-                <td class="gmail"> <button class="open-popup" data-src="gmail.html">Gmail</button></td>
-            </tr>
-        </table>
+
 
         <table class="poubelle">
             <tr>
@@ -128,15 +131,18 @@
             </tr>
         </table>
 
-        <!-- Popup interne modal + iframe -->
-        <div id="popup-overlay" class="popup-overlay">
-            <div class="popup-window">
-                <button id="popup-close" class="popup-close">✕</button>
-                <iframe src="" class="popup-iframe" title="Popup"></iframe>
-            </div>
-        </div>
+
 
     </div>
+
+    <!-- Popup interne modal + iframe -->
+    <div id="popup-overlay" class="popup-overlay">
+        <div class="popup-window">
+            <button id="popup-close" class="popup-close">✕</button>
+            <iframe src="" class="popup-iframe" title="Popup"></iframe>
+        </div>
+    </div>
+
     <script src="poubelle.js"></script>
     <script src="popup.js"></script>
 </body>

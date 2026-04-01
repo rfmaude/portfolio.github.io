@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="page-icons.css">
+    <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+    <img class="fond" src="images/fond_d_ecran.jpg" alt="">
+    <div social>
+        <section>
+            <button class="open-popup" data-src="google.html">
+                <img class="icon" src="images/icons/icons-google.png" alt="">
+                <span class="name">Google</span>
+            </button>
+        </section>
+        <section>
+            <button class="open-popup" data-src="gmail.html">
+                <img class="icon" src="images/icons/icons-gmail.png" alt="">
+                <span class="name">Gmail</span>
+            </button>
+        </section>
+        <section>
+            <a href="https://www.instagram.com/rfmaude/" target="_blank">
+                <img class="icon" src="images/icons/icons-instagram.png" alt="">
+                <span class="name">Instagram</span>
+            </a>
+        </section>
+        <section>
+            <a href="https://www.linkedin.com/in/maude-roy-flament/" target="_blank">
+                <img class="icon" src="images/icons/icons-linkedin.png" alt="">
+                <span class="name">Linkedin</span>
+            </a>
+        </section>
+    </div>
+    <div class="work">
+        <section>
+            <button class="open-popup" data-src="">
+                <img class="icon" src="images/icons/icons-photos.png" alt="">
+                <span class="name">Photos</span>
+            </button>
+        </section>
+        <section>
+            <button class="open-popup" data-src="gmail.html">
+                <img class="icon" src="images/icons/icons-gmail.png" alt="">
+                <span class="name">Gmail</span>
+            </button>
+        </section>
+    </div>
+
+    <!-- Popup interne modal + iframe -->
+        <div id="popup-overlay" class="popup-overlay">
+            <div class="popup-window">
+                <button id="popup-close" class="popup-close">✕</button>
+                <iframe src="" class="popup-iframe" title="Popup"></iframe>
+            </div>
+        </div>
+
+
+    <script src="poubelle.js"></script>
+    <script src="popup.js"></script>
+</body>
+
+</html>
