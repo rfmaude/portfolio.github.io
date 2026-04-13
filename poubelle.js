@@ -1,6 +1,7 @@
-var poubelle = document.querySelector('.poubelle');
+var poubelle = document.querySelector('.bin, .poubelle');
 
-poubelle.addEventListener('click', function() {
+if (poubelle) {
+    poubelle.addEventListener('click', function() {
     // Conteneur parent
     var container = document.createElement('div');
     container.className = 'dossier-container';
@@ -31,4 +32,5 @@ poubelle.addEventListener('click', function() {
     container.appendChild(closeZone2);
     
     document.body.appendChild(container);
-});
+    });
+}

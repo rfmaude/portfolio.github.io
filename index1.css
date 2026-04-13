@@ -12,6 +12,90 @@
 
 }
 
+body {
+    margin: 0;
+    overflow: scroll;
+    /* Empêche le scroll si une icône dépasse */
+    height: 100%;
+    width: 100%;
+    min-width: 500px;
+    min-height: 500px;
+    font-size: clamp(15px, 2vw, 18px);
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+}
+
+h1 {
+    position: absolute;
+    top: 0vh;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgb(255, 255, 255);
+    text-shadow: 0 1vh 3vh rgba(0, 0, 0, 0.9);
+    font-size: clamp(18px, 3vw, 36px);
+}
+
+.icons .work,
+.icons .language,
+.icons .social {
+    width: 30vw;
+    padding: 1vw;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 1vh 3vh rgba(0, 0, 0, 0.3);
+}
+
+.icons .poubelle {
+    width: 12vw;
+    padding: 1vw;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 1vh 3vh rgba(0, 0, 0, 0.3);
+
+}
+th{
+    padding-bottom: 5vh;
+}
+
+td{
+    padding-bottom: 2vh;
+}
+th,
+td {
+    color: rgb(255, 255, 255);
+    text-shadow: 0 1vh 3vh rgba(0, 0, 0, 0.9);
+
+}
+
+.social {
+    position: absolute;
+    top: 5vh;
+    left: 4vw;
+
+}
+
+.language {
+    position: absolute;
+    top: 60vh;
+    left: 4vw;
+
+}
+
+.work {
+    position: absolute;
+    top: 5vh;
+    right: 4vw;
+}
+
+.poubelle {
+    position: absolute;
+    top: 70vh;
+    right: 4vw;
+}
+
+.td:hover {
+    padding: 0.3vw;
+
+}
 
 .icon {
     padding: 0.3vw;

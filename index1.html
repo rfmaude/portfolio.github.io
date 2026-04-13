@@ -11,56 +11,136 @@
 </head>
 
 <body>
+    <h1>Maude Roy Flament</h1>
     <img class="fond" src="images/fond_d_ecran.jpg" alt="">
-    <div social>
-        <section>
-            <button class="open-popup" data-src="google.html">
-                <img class="icon" src="images/icons/icons-google.png" alt="">
-                <span class="name">Google</span>
-            </button>
-        </section>
-        <section>
-            <button class="open-popup" data-src="gmail.html">
-                <img class="icon" src="images/icons/icons-gmail.png" alt="">
-                <span class="name">Gmail</span>
-            </button>
-        </section>
-        <section>
-            <a href="https://www.instagram.com/rfmaude/" target="_blank">
-                <img class="icon" src="images/icons/icons-instagram.png" alt="">
-                <span class="name">Instagram</span>
-            </a>
-        </section>
-        <section>
-            <a href="https://www.linkedin.com/in/maude-roy-flament/" target="_blank">
-                <img class="icon" src="images/icons/icons-linkedin.png" alt="">
-                <span class="name">Linkedin</span>
-            </a>
-        </section>
-    </div>
-    <div class="work">
-        <section>
-            <button class="open-popup" data-src="">
-                <img class="icon" src="images/icons/icons-photos.png" alt="">
-                <span class="name">Photos</span>
-            </button>
-        </section>
-        <section>
-            <button class="open-popup" data-src="gmail.html">
-                <img class="icon" src="images/icons/icons-gmail.png" alt="">
-                <span class="name">Gmail</span>
-            </button>
-        </section>
+    <div class="icons">
+        <table class="social">
+            <tr>
+                <th scope="row" colspan="4">A PROPOS DE MOI</th>
+            </tr>
+            <tr>
+                <!-- <td><img class="icon" src="images/icons/icons8-youtube-70.png" alt=""></td> -->
+                <td class="google">
+                    <button class="open-popup" data-src="google.html">
+                        <img class="icon" src="images/icons/icons-chrome.png" alt="">
+                    </button>
+                </td>
+                <td class="cv">
+                    <button class="open-popup" data-src="images/CV_2026.pdf">
+                        <img class="icon" src="images/icons/icons-pdf.png" alt="">
+                    </button>
+                </td>
+                <td class="gmail">
+                    <button class="open-popup" data-src="gmail.html">
+                        <img class="icon" src="images/icons/icons-gmail.png" alt="">
+                    </button>
+                </td>
+                
+
+            </tr>
+            <tr>
+                <td class="google"> <button class="open-popup" data-src="google.html">Google</button></td>
+                <td>
+                        <button class="open-popup" data-src="images/CV_2026.pdf">Télécharger mon CV</button>
+                </td>
+                <td class="gmail"> <button class="open-popup" data-src="gmail.html">Gmail</button></td>
+                
+            </tr>
+            <tr>
+                <td>
+                    <a href="https://www.instagram.com/rfmaude/" target="_blank">
+                        <img class="icon" src="images/icons/icons-instagram.png" alt="">
+                    </a>
+                </td>
+                <td>
+                    <a href="https://www.linkedin.com/in/maude-roy-flament/" target="_blank">
+                        <img class="icon" src="images/icons/icons-linkedin.png" alt="">
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="https://www.instagram.com/rfmaude/" target="_blank">
+                        <button>Intagram</button>
+                    </a>
+                </td>
+                <td>
+                    <a href="https://www.linkedin.com/in/maude-roy-flament/" target="_blank">
+                        <button>LinkedIn</button>
+                    </a>
+                </td>
+            </tr>
+        </table>
+        <table class="work">
+            <tr>
+                <th scope="row" colspan="3">RÉALISATIONS</th>
+            </tr>
+            <tr>
+                <td class="photos">
+                    <button class="open-popup" data-src="photo.html">
+                        <img class="icon" src="images/icons/icons-photos.png" alt="">
+                    </button>
+                </td>
+                <td class="jeux">
+                    <button class="open-popup" data-src="https://rfmaude.github.io/jeu.github.io/">
+                        <img class="icon" src="images/icons/icons-game.png" alt="">
+                    </button>
+                </td>
+
+            </tr>
+            <tr>
+                <td class="photos"><button class="open-popup" data-src="photo.html">Photos</button></td>
+                <td class="jeux"><button class="open-popup" data-src="https://rfmaude.github.io/jeu.github.io/">
+                        Jeux</button></td>
+            </tr>
+        </table>
+
+        <table class="language">
+            <tr>
+                <th scope="row" colspan="2">STACK TECHNIQUE</th>
+            </tr>
+            <tr>
+                <td class="folder">
+                    <button class="open-popup" data-src="environnement.html">
+                        <img class="icon" src="images/icons/icons8-folder.png" alt="">
+                    </button>
+                </td>
+                <td class="folder">
+                    <button class="open-popup" data-src="maitrise.html">
+                        <img class="icon" src="images/icons/icons8-folder.png" alt="">
+                    </button>
+                </td>
+
+            </tr>
+            <tr>
+                <td>Environnement</td>
+                <td>Maîtrises</td>
+            </tr>
+
+        </table>
+
+
+
+        <table class="poubelle">
+            <tr>
+                <td><img class="icon" src="images/icons/icons-bin.png" alt=""></td>
+            </tr>
+            <tr>
+                <td>Corbeille</td>
+            </tr>
+        </table>
+
+
+
     </div>
 
     <!-- Popup interne modal + iframe -->
-        <div id="popup-overlay" class="popup-overlay">
-            <div class="popup-window">
-                <button id="popup-close" class="popup-close">✕</button>
-                <iframe src="" class="popup-iframe" title="Popup"></iframe>
-            </div>
+    <div id="popup-overlay" class="popup-overlay">
+        <div class="popup-window">
+            <button id="popup-close" class="popup-close">✕</button>
+            <iframe src="" class="popup-iframe" title="Popup"></iframe>
         </div>
-
+    </div>
 
     <script src="poubelle.js"></script>
     <script src="popup.js"></script>
