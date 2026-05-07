@@ -1,38 +1,36 @@
-/*PAGE POUBELLE*/
+/* ===== Corbeille popup ===== */
 .dossier-container {
     position: fixed;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     z-index: 100;
+    transform: translate(-50%, -50%);
 }
 
-.dossier{
-    border-radius: 1vw;
+.dossier {
+    display: block;
     max-width: 130%;
     height: auto;
-    display: block;
+    border-radius: 1vw;
     box-shadow: 0 1vh 3vh rgba(0, 0, 0, 0.5);
 }
 
-.close-zone {
+/* Zones de clic invisibles pour fermer */
+.close-zone,
+.close-zone2 {
     position: absolute;
-    top: 0vw;
-    right: -11.6vw;
+    top: 0;
+    z-index: 101;
     width: 1vw;
     height: 1vw;
     cursor: pointer;
-    z-index: 101;    
+}
 
+.close-zone {
+    right: -11.6vw;
 }
 
 .close-zone2 {
-    position: absolute;
-    top: 0vw;
     right: -14.3vw;
-    width: 1vw;
-    height: 1vw;
-    cursor: pointer;
-    z-index: 101;
 }
 

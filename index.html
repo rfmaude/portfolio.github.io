@@ -14,75 +14,99 @@
     <h1>Maude Roy Flament</h1>
 
     <main class="home-grid">
+        <div class="iconOffice">
         <section class="about-links">
             <h2>A PROPOS DE MOI</h2>
-            <button class="open-popup" data-src="google.html" aria-label="Ouvrir Google">
+            <button class="open-popup favoris" data-src="google.html" aria-label="Ouvrir Google">
                 <img class="icon" src="images/icons/icons-chrome.png" alt="">
                 <p class="item-name">Google</p>
             </button>
-            <button class="open-popup" data-src="images/CV_2026.pdf" aria-label="Ouvrir mon CV pour le télécharger">
+            <button class="open-popup favoris" data-src="images/CV_2026.pdf"
+                aria-label="Ouvrir mon CV pour le télécharger">
                 <img class="icon" src="images/icons/icons-pdf.png" alt="">
                 <p class="item-name">Télécharger mon CV</p>
             </button>
-            <button class="open-popup" data-src="gmail.html" aria-label="Ouvrir Gmail">
+            <button class="open-popup favoris" data-src="gmail.html" aria-label="Ouvrir Gmail">
                 <img class="icon" src="images/icons/icons-gmail.png" alt="">
-                <p class="item-name">Gmail</p>
+                <p class="item-name">Contact</p>
             </button>
-            <button class="open-popup" data-src="https://www.instagram.com/rfmaude/" aria-label="Ouvrir Instagram dans un nouvel onglet">
+            <button class="open-popup" data-src="https://www.instagram.com/rfmaude/"
+                aria-label="Ouvrir Instagram dans un nouvel onglet">
                 <img class="icon" src="images/icons/icons-instagram.png" alt="">
                 <p class="item-name">Instagram</p>
             </button>
-            <button class="open-popup" data-src="https://www.linkedin.com/in/maude-roy-flament/" aria-label="Ouvrir LinkedIn dans un nouvel onglet">
+            <button class="open-popup" data-src="https://www.linkedin.com/in/maude-roy-flament/"
+                aria-label="Ouvrir LinkedIn dans un nouvel onglet">
                 <img class="icon" src="images/icons/icons-linkedin.png" alt="">
                 <p class="item-name">LinkedIn</p>
             </button>
+            <button class="open-popup" data-src="https://github.com/rfmaude"
+                aria-label="Ouvrir Github dans un nouvel onglet">
+                <img class="icon" src="images/icons/icons-github.png" alt="">
+                <p class="item-name">Github</p>
+            </button>
+
         </section>
 
         <section class="work-links">
             <h2>RÉALISATIONS</h2>
-            <button class="open-popup" data-src="photo.html" aria-label="Ouvrir les photos">
+            <button class="open-popup favoris" data-src="projet.html" aria-label="Ouvrir la section projet">
+                <img class="icon" src="images/icons/icons8-folder-stuff.png" alt="">
+                <p class="item-name">Projets</p>
+            </button>
+            <button class="open-popup favoris" data-src="album.html" aria-label="Ouvrir les photos">
                 <img class="icon" src="images/icons/icons-photos.png" alt="">
                 <p class="item-name">Photos</p>
             </button>
-            <button class="open-popup" data-src="https://rfmaude.github.io/jeu.github.io/" aria-label="Ouvrir les jeux">
-                <img class="icon" src="images/icons/icons-game.png" alt="">
+            <!-- <button class="open-popup" data-src="https://rfmaude.github.io/jeu.github.io/" aria-label="Ouvrir les jeux">
+                <img class="icon" src="images/icons/gestion_plante_70.png" alt="">
                 <p class="item-name">Jeux</p>
-            </button>
+            </button> -->
+
+
         </section>
 
         <section class="stack-links">
             <h2>STACK TECHNIQUE</h2>
-            <button class="open-popup" data-src="environnement.html" aria-label="Ouvrir la section environnement">
+            <!-- <button class="open-popup" data-src="environnement.html" aria-label="Ouvrir la section environnement">
                 <img class="icon" src="images/icons/icons8-folder.png" alt="">
                 <p class="item-name">Environnement</p>
-            </button>
-            <button class="open-popup" data-src="maitrise.html" aria-label="Ouvrir la section maîtrises">
-                <img class="icon" src="images/icons/icons8-folder.png" alt="">
+            </button> -->
+            <button class="open-popup favoris" data-src="maitrise.html" aria-label="Ouvrir la section maîtrises">
+                <img class="icon" src="images/icons/icons8-folder-education.png" alt="">
                 <p class="item-name">Maîtrises</p>
             </button>
         </section>
+
         <section class="bin">
             <button type="button" aria-label="Ouvrir la corbeille">
                 <img class="icon" src="images/icons/icons-bin.png" alt="">
                 <p class="item-name">Corbeille</p>
             </button>
+
+        </section>
+</div>
+        <section class="research">
+            <button class="open-popup " data-src="google.html" aria-label="Ouvrir mon profil">
+                <img class="icon" src="images/icons/moi.png" alt="">
+            </button>
+
         </section>
 
     </main>
 
-
-
     <!-- Popup interne modal + iframe -->
     <div id="popup-overlay" class="popup-overlay">
         <div class="popup-window">
-            <button id="popup-close" class="popup-close" aria-label="Fermer la fenêtre popup">✕</button>
+            <button  class="popup-close" aria-label="Fermer la fenêtre popup">✕</button>
+            <button class="popup-reduce" aria-label="Baisser la fenêtre popup">-</button>
+
             <iframe src="" class="popup-iframe" title="Popup"></iframe>
         </div>
     </div>
 
-
+    <script src="popup_research.js"></script>
     <script src="poubelle.js"></script>
-    <script src="popup.js"></script>
 </body>
 
 </html>

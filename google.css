@@ -1,74 +1,81 @@
-body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background-color:  rgb(242, 235, 225);
-    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
-    color : rgb(45,45,45)
-
+/* ===== Base ===== */
+* {
+    box-sizing: border-box;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    color: rgb(45, 45, 45);
+    background-color: rgb(242, 235, 225);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* ===== header ===== */
 header {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 1vh;
-
 }
 
-.close {
-    background-color: rgba(0, 0, 0, 0.15);
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 5vh;
-}
-
-.bi-x-lg:hover {
-    background-color: rgba(0, 0, 0, 0.05);
-    cursor: pointer;
-}
-.bi-x-lg{
-    font-size: 130%;
-    position: absolute;
-    right: 2vw;
-    top: 1vh;
-} 
 .icongoogle {
     width: 4vh;
     margin-right: 0.4vw;
 }
 
 header p {
-    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
-    font-size: clamp(12px, 2vw, 16px);
-    border: 1px solid rgba(0, 0, 0, 0.3);
-    margin-right: 0.3vw;
-    border-radius: 50px;
-    padding: 6px;
-    padding-left: 20px;
     width: 45vh;
+    margin-right: 0.3vw;
+    padding: 6px 6px 6px 20px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 50px;
     background-color: rgba(250, 235, 215, 0.3);
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    font-family: 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-size: clamp(12px, 2vw, 16px);
 }
 
 .bi-search {
-    font-size: clamp(12px, 2vw, 16px);
     margin-left: 9.5vw;
-    color: rgb(45,45,45);
+    color: rgb(45, 45, 45);
+    font-size: clamp(12px, 2vw, 16px);
+}
+
+/* ===== contenu ===== */
+h1 {
+    margin-bottom: 2px;
 }
 
 .txt {
     display: flex;
-    ;
     flex-wrap: wrap;
     align-items: center;
     width: 50vw;
     padding: 1vw;
-    /* border: 4mm ridge rgba(11, 121, 218, 0.701); */
     border: thick double rgba(11, 121, 218, 0.701);
 }
-h1{
-    margin-bottom: 2px;
+
+/* ===== éléments de fermeture (si utilisés) ===== */
+.close {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 5vh;
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+.bi-x-lg {
+    position: absolute;
+    top: 1vh;
+    right: 2vw;
+    font-size: 130%;
+}
+
+.bi-x-lg:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.05);
 }

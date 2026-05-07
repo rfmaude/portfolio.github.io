@@ -1,6 +1,6 @@
 // MENU
-let btnMenu = document.querySelector(".deroulant"); // Ton bouton image
-let volet = document.querySelector(".sous");       // Ton menu caché
+let btnMenu = document.querySelector(".deroulant"); 
+let volet = document.querySelector(".sous");       
 
 btnMenu.addEventListener("click", function(event) {
     event.preventDefault(); // Empêche le lien de recharger la page
